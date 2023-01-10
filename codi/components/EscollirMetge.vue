@@ -8,7 +8,7 @@
     </div> -->
 
     <div @click="seleccionarMetge(pos)"
-        class="metgeClass" v-for="(item, pos) in metges"
+        class="metge" v-for="(item, pos) in metges"
             :key="pos">
             <strong>{{ item.nom }}</strong>
             <br>
@@ -42,9 +42,11 @@ export default {
         }
     },
     methods:{
-        seleccionarMetge(metge)
+        seleccionarMetge(posicio)
         {
             console.log('metge seleccionat', this.metges[posicio])
+
+            this.$emit('quanEscolleixiUnMetge')
         }
     }
 }
@@ -59,7 +61,7 @@ h2{
 .metge{
     margin:5px;
     padding:5px;
-    background-color: antiquewhite;
+    background-color: red;
     cursor: pointer;
 
 }
