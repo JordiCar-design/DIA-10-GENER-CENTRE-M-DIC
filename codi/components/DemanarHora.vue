@@ -1,0 +1,12 @@
+<template>
+<v-container>
+    <v-row>
+        <v-col>
+            <EscollirMetge></EscollirMetge>
+        </v-col>
+        <v-col>
+            <EscollirData></EscollirData>
+        </v-col>
+    </v-row>
+</v-container>
+</template>
