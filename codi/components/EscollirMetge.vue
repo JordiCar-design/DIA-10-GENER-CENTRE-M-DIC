@@ -7,7 +7,7 @@
     </Metge> 
     </div> -->
 
-    <div @click="seleccionarMetge(pos)"
+        <div @click="seleccionarMetge(pos)" 
         class="metge" v-for="(item, pos) in metges"
             :key="pos">
             <strong>{{ item.nom }}</strong>
@@ -27,7 +27,7 @@ export default {
                     especialitat:"Traumatologia"
                 },
                 {
-                    nom:"Dr. P",
+                    nom:"Dr. Qual",
                     especialitat:"Medicina General"
                 },
                 {
